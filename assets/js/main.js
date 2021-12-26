@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -190,7 +190,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -224,5 +224,26 @@
       mirror: false
     })
   });
+
+
+  if (document.addEventListener) {
+    document.addEventListener('contextmenu', function(e) {
+      alert("We are really sorry but right click is disabled!"); //here you draw your own menu
+      e.preventDefault();
+    }, false);
+  } else {
+    document.attachEvent('oncontextmenu', function() {
+      alert("We are really sorry but right click is disabled!")
+      window.event.returnValue = false;
+    });
+  }
+
+  // disable F12
+  document.onkeydown = function (e) {
+    if(e.keyCode == 123) {
+      alert("We are really sorry but F12 is disabled!")
+      window.event.returnValue = false;
+    }
+  }
 
 })()
