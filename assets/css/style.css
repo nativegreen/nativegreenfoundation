@@ -486,7 +486,7 @@ section {
 }
 #about .about-container .background {
   min-height: 300px;
-  background: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+  background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
               url(../img/forest.jpeg) center top no-repeat;
   margin-bottom: 10px;
   background-size: cover;
