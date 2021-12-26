@@ -331,7 +331,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
+              url(../img/cover.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -485,10 +486,12 @@ section {
 }
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+              url(../img/forest.jpeg) center top no-repeat;
   margin-bottom: 10px;
   background-size: cover;
   background-position: center;
+  border-radius: 4%;
 }
 #about .about-container .content {
   background: #fff;
