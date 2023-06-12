@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+# backdrop Section
+--------------------------------------------------------------*/
+#backdrop {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
+              url(../img/nemcare/head.jpeg) top center;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #backdrop {
+    background-attachment: fixed;
+  }
+}
+#backdrop:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#backdrop .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#backdrop h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #backdrop h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+#backdrop h2 {
+  color: #eeeeeea8;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  #backdrop h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+#backdrop .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#backdrop .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
