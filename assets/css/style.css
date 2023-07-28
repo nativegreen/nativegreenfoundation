@@ -920,7 +920,7 @@ section {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: 160px;
 }
 #team .member .pic img {
   max-width: 84%;
@@ -1151,4 +1151,22 @@ section {
 }
 .portfolio1-item {
     margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Horizontally center the columns */
+  align-items: center; /* Vertically center the columns */
+}
+
+/* Apply different styles for medium-sized screens */
+@media (max-width: 991.98px) {
+  .row {
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .col-lg-3.col-md-6 {
+    flex-basis: 50%; /* Take up half of the row width on medium screens */
+    max-width: 50%; /* Limit width to half the row width on medium screens */
+  }
 }
