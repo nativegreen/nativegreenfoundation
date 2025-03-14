@@ -226,17 +226,17 @@
   });
 
 
-  if (document.addEventListener) {
-    document.addEventListener('contextmenu', function(e) {
-      alert("We are really sorry but right click is disabled!"); //here you draw your own menu
-      e.preventDefault();
-    }, false);
-  } else {
-    document.attachEvent('oncontextmenu', function() {
-      alert("We are really sorry but right click is disabled!")
-      window.event.returnValue = false;
-    });
-  }
+  // if (document.addEventListener) {
+  //   document.addEventListener('contextmenu', function(e) {
+  //     alert("We are really sorry but right click is disabled!"); //here you draw your own menu
+  //     e.preventDefault();
+  //   }, false);
+  // } else {
+  //   document.attachEvent('oncontextmenu', function() {
+  //     alert("We are really sorry but right click is disabled!")
+  //     window.event.returnValue = false;
+  //   });
+  // }
 
   // disable F12
   document.onkeydown = function (e) {
